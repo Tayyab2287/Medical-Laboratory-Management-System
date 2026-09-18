@@ -1,0 +1,49 @@
+<Window x:Class="LabReportApp.HistoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Past Lab Reports" Height="540" Width="900"
+        MinHeight="420" MinWidth="680" WindowStartupLocation="CenterScreen"
+        Background="{DynamicResource ColorBackground}">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- ================= HEADER BANNER ================= -->
+        <Border Grid.Row="0" Background="{DynamicResource ColorBannerBg}" Padding="24,16">
+            <TextBlock Text="Past Lab Reports" FontSize="18" FontWeight="Bold" Foreground="White"/>
+        </Border>
+
+        <Grid Grid.Row="1" Margin="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Grid Grid.Row="0">
+                <Border Style="{StaticResource CardBackground}"/>
+                <Border Padding="10">
+                    <DataGrid x:Name="dgHistory" AutoGenerateColumns="False" IsReadOnly="True" BorderThickness="0">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Serial No" Binding="{Binding SerialNumber}" Width="110"/>
+                            <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="140"/>
+                            <DataGridTextColumn Header="Age" Binding="{Binding Age}" Width="45"/>
+                            <DataGridTextColumn Header="Gender" Binding="{Binding Gender}" Width="70"/>
+                            <DataGridTextColumn Header="Phone" Binding="{Binding PhoneNumber}" Width="110"/>
+                            <DataGridTextColumn Header="Status" Binding="{Binding Status}" Width="80"/>
+                            <DataGridTextColumn Header="Discount %" Binding="{Binding DiscountPercentage}" Width="80"/>
+                            <DataGridTextColumn Header="Payable (PKR)" Binding="{Binding NetAmount}" Width="100"/>
+                            <DataGridTextColumn Header="Date" Binding="{Binding CreatedAt}" Width="130"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                </Border>
+            </Grid>
+
+            <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,14,0,0">
+                <Button x:Name="btnOpenPdf" Content="Open Selected PDF" Style="{StaticResource AccentButton}"
+                        Click="btnOpenPdf_Click"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>

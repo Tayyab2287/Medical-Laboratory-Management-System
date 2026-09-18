@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>LabReportApp</RootNamespace>
+    <AssemblyName>LabReportApp</AssemblyName>
+    <ApplicationIcon>Assets\Logo.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Local database (offline) -->
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="8.0.8" />
+
+    <!-- PDF report generation -->
+    <PackageReference Include="QuestPDF" Version="2024.10.3" />
+
+    <!-- QR Code generation -->
+    <PackageReference Include="QRCoder" Version="1.6.0" />
+
+    <!-- FTP upload to lab's web hosting -->
+    <PackageReference Include="FluentFTP" Version="49.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Reports\**" CopyToOutputDirectory="PreserveNewest" />
+    <Resource Include="Assets\Logo.ico" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,31 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- ===================== DARK THEME COLOR PALETTE ===================== -->
+    <SolidColorBrush x:Key="ColorPrimary" Color="#5B8DEF"/>
+    <SolidColorBrush x:Key="ColorPrimaryDark" Color="#3D5FBF"/>
+    <SolidColorBrush x:Key="ColorPrimaryLight" Color="#24344F"/>
+    <SolidColorBrush x:Key="ColorAccent" Color="#22C1A3"/>
+    <SolidColorBrush x:Key="ColorAccentDark" Color="#1AA48A"/>
+    <SolidColorBrush x:Key="ColorDanger" Color="#EF6C7E"/>
+    <SolidColorBrush x:Key="ColorDangerDark" Color="#D85268"/>
+    <SolidColorBrush x:Key="ColorBackground" Color="#12161F"/>
+    <SolidColorBrush x:Key="ColorCard" Color="#1C222E"/>
+    <SolidColorBrush x:Key="ColorBorder" Color="#2E3746"/>
+    <SolidColorBrush x:Key="ColorTextPrimary" Color="#E5E9F0"/>
+    <SolidColorBrush x:Key="ColorTextSecondary" Color="#8A94A6"/>
+    <SolidColorBrush x:Key="ColorHeaderBg" Color="#1A2233"/>
+    <SolidColorBrush x:Key="ColorHeaderSubtitle" Color="#C7D6F5"/>
+    <SolidColorBrush x:Key="ColorBannerBg" Color="#16213E"/>
+    <SolidColorBrush x:Key="ColorScrollThumb" Color="#3A4356"/>
+
+    <!-- Secondary/utility colors (previously hardcoded hex values in styles) -->
+    <SolidColorBrush x:Key="ColorSecondaryBg" Color="#2A3140"/>
+    <SolidColorBrush x:Key="ColorSecondaryHoverBg" Color="#343D4F"/>
+    <SolidColorBrush x:Key="ColorButtonDisabledBg" Color="#3A4150"/>
+    <SolidColorBrush x:Key="ColorAccentDisabledBg" Color="#234A42"/>
+    <SolidColorBrush x:Key="ColorInputBg" Color="#232A38"/>
+    <SolidColorBrush x:Key="ColorInputDisabledBg" Color="#1A2029"/>
+    <SolidColorBrush x:Key="ColorRowAlternate" Color="#202836"/>
+
+</ResourceDictionary>
