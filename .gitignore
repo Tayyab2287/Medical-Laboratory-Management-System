@@ -1,0 +1,41 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+*.dll
+*.exe
+*.pdb
+*.xml
+
+# Sensitive configuration
+AppSettings.cs
+appsettings.json
+*.config
+
+# User data folders
+Reports/
+Bills/
+
+# Database files
+*.mdf
+*.ldf
+LabReports.db
+*.db
+
+# Backup folders
+*Backup*/
+D:/LabReportBackups/
+
+# NuGet packages
+packages/
+*.nupkg
+
+# OS files
+.DS_Store
+Thumbs.db
