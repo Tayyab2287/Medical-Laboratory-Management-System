@@ -1,18 +1,5 @@
 # Lab Report Management System — Setup Guide (VS Code)
 
-## Features included in this version
-- Patient entry with auto-generated unique Serial Number (LAB-000001, ...)
-- Multiple test **categories** per report (e.g. CBC, LFT, KFT) - each with its own tests
-- **Predefined Tests** manager - save Category/Test Name/Unit/Normal Range once, then get
-  live autocomplete suggestions while entering a report; selecting a test auto-fills
-  Unit, Normal Range and Category
-- PDF report generation with a QR code linking to the online copy
-- FTP upload to your website + SMS notification to the patient with the download link
-- Automatic **database + PDF backups** (on every save and on app startup), plus manual
-  "Backup Now" and "Restore from Backup" buttons
-- Light, modern UI theme (soft blue/teal color palette, card-based layout, no scrolling)
-
-
 ## STEP 1 — Install required software (one-time)
 
 1. **.NET 8 SDK** (required to build/run WPF apps)
